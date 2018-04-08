@@ -1,5 +1,5 @@
 
-let combineReducers = (config) => {
+const combineReducers = (config) => {
   return (state = {}, action) => {
     let newState = {}
     for (let key of config) {
@@ -8,3 +8,5 @@ let combineReducers = (config) => {
     return newState
   }
 }
+
+export { combineReducers }
